@@ -149,7 +149,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -182,6 +182,119 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.kesoft.top/2023/05/16/Mit-the-missing-semester-Day1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kesoft">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kesoft">
+      <meta itemprop="description" content="Keep Learning">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Kesoft">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/05/16/Mit-the-missing-semester-Day1/" class="post-title-link" itemprop="url">Mit:the missing semester Day1</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-05-16 13:34:19 / 修改时间：14:20:19" itemprop="dateCreated datePublished" datetime="2023-05-16T13:34:19+08:00">2023-05-16</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2023/05/16/Mit-the-missing-semester-Day1/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/05/16/Mit-the-missing-semester-Day1/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="这是篇文章是干嘛的？"><a href="#这是篇文章是干嘛的？" class="headerlink" title="这是篇文章是干嘛的？"></a>这是篇文章是干嘛的？</h1><p>这是用于记录我学习<a target="_blank" rel="noopener" href="https://missing-semester-cn.github.io/">MIT:The missing semester</a>课程的过程</p>
+<h1 id="什么是MIT-the-missing-semester"><a href="#什么是MIT-the-missing-semester" class="headerlink" title="什么是MIT:the missing semester?"></a>什么是MIT:the missing semester?</h1><p>这是一门由麻省理工大学的老师讲授的课程，教育学生们如何学习使用计算机专业常用工具。如Shell Vim Git 等一般课程不会讲授但是却对计算机学习十分有用的工具。</p>
+<h1 id="Shell常用指令"><a href="#Shell常用指令" class="headerlink" title="Shell常用指令"></a>Shell常用指令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;folder&gt; #打开folder文件夹</span><br><span class="line">pwd #显示当前的工作目录</span><br><span class="line">cd .. #打开上级目录</span><br><span class="line">ls #显示当前目录下的所有文件</span><br><span class="line">mv #重命名/移动文件</span><br><span class="line">cp #拷贝文件</span><br><span class="line">mkdir #新建文件夹</span><br><span class="line">chmod #修改文件权限</span><br></pre></td></tr></table></figure>
+
+<h1 id="程序间建立连接"><a href="#程序间建立连接" class="headerlink" title="程序间建立连接"></a>程序间建立连接</h1><p>在Shell中，程序有两个主要的流：输入流和输出流。</p>
+<p>程序读取信息时，会从输入流读取，打印信息时，会将信息输出到输出流中。</p>
+<p>通常输出流为终端，但可以重定向这些流，比如最简单的重定向 ‘&lt; file’ 和 ‘&gt; file’</p>
+<p>比如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">echo hello &gt; hello.txt</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="built_in">echo</span> hello 会输出hello，但由于输出流被重定向至hello.txt，所以终端无输出，hello.txt的内容变为hello</span></span><br><span class="line">cat &lt; hello.txt &gt; hello2.txt</span><br><span class="line">cat hello2.txt</span><br><span class="line">hello</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">hello.txt被<span class="built_in">cat</span>接收，<span class="built_in">cat</span>的输出被hello2.txt接收，所以终端无输出，且hello2.txt变为hello</span></span><br></pre></td></tr></table></figure>
+
+<p>还可以使用管道(pipes)更好的利用文件重定向。|操作符允许将程序的输出和另一个程序的输入连接起来</p>
+<p>比如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps | grep process</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">ps获取当前所有的进程，并传给grep，grep查找名称带有process的进程，并输出到终端</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="课后练习"><a href="#课后练习" class="headerlink" title="课后练习"></a>课后练习</h1><p>环境为：WSL2 Ubuntu 20.04</p>
+<ol>
+<li><p>cd &#x2F;tmp 打开’tmp’文件夹，mkdir missing 创建名称为 ‘missing’ 的文件夹</p>
+</li>
+<li><p>man touch 查看程序‘touch’的使用手册</p>
+</li>
+<li><p>touch semester 新建一个名为’semester’的文件</p>
+</li>
+<li><pre><code class="shell">echo &#39;#!/bin/sh&#39; &gt; semester
+echo &#39;curl --head --silent https://missing.csail.mit.edu&#39; &gt;&gt; semester
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">5. 写入文件完成后 chmod +x semester 给予可执行权限</span><br><span class="line"></span><br><span class="line">6. ./semester 执行文件</span><br><span class="line"></span><br><span class="line">7. ```shell</span><br><span class="line">   #WSL2指令：</span><br><span class="line">   cat /sys/class/power_supply/BAT1/capacity</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>获取到笔记本电量信息，大功告成</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
