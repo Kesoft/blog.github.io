@@ -149,7 +149,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -182,6 +182,97 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.kesoft.top/2023/07/03/Mit-the-missing-semester-Day3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kesoft">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kesoft">
+      <meta itemprop="description" content="Keep Learning">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Kesoft">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/07/03/Mit-the-missing-semester-Day3/" class="post-title-link" itemprop="url">Mit:the missing semester Day3</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-07-03 18:47:34 / 修改时间：18:51:07" itemprop="dateCreated datePublished" datetime="2023-07-03T18:47:34+08:00">2023-07-03</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2023/07/03/Mit-the-missing-semester-Day3/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/07/03/Mit-the-missing-semester-Day3/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="课程目标"><a href="#课程目标" class="headerlink" title="课程目标"></a>课程目标</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/07/03/Mit-the-missing-semester-Day3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -227,7 +318,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-07-03 18:44:16" itemprop="dateModified" datetime="2023-07-03T18:44:16+08:00">2023-07-03</time>
+      <time title="修改时间：2023-07-03 18:49:01" itemprop="dateModified" datetime="2023-07-03T18:49:01+08:00">2023-07-03</time>
     </span>
 
   
@@ -255,78 +346,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="课程目标"><a href="#课程目标" class="headerlink" title="课程目标"></a>课程目标</h1><p>学习Bash作为脚本语言的一些基础操作，以及几种最常用的shell工具</p>
-<h1 id="Shell脚本"><a href="#Shell脚本" class="headerlink" title="Shell脚本"></a>Shell脚本</h1><p>大多数Shell都有自己的一套脚本语言，包括变量、控制流和语法。本次主要学习Bash脚本，因为它最流行，应用最广泛</p>
-<ol>
-<li><p>赋值</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">foo=bar</span><br><span class="line"><span class="comment">#将bar的值赋给foo</span></span><br><span class="line">foo = bar</span><br><span class="line"><span class="comment">#不能正确工作，会调用程序foo并将=和bar作为参数传入程序</span></span><br><span class="line"></span><br><span class="line">bar=1</span><br><span class="line">foo=bar</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$foo</span>&quot;</span></span><br><span class="line"><span class="comment">#输出1</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;$foo&#x27;</span></span><br><span class="line"><span class="comment">#输出$foo</span></span><br><span class="line"><span class="comment">#Bash中字符串通过&#x27;和&quot;分隔符定义，&#x27;定义的字符串为原义，&quot;定义的字符串将会替换为变量值</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>函数</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#bash也支持if、case、while和for这些控制流关键词</span></span><br><span class="line"><span class="comment">#例如mcd()&#123;</span></span><br><span class="line">    <span class="built_in">mkdir</span> -p <span class="string">&quot;<span class="variable">$1</span>&quot;</span></span><br><span class="line">    <span class="built_in">cd</span> <span class="string">&quot;<span class="variable">$1</span>&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#其中$1为特殊变量，Bash中有许多特殊变量，例如：</span></span><br><span class="line"><span class="comment"># $0 脚本名</span></span><br><span class="line"><span class="comment"># $1 -&gt; $9 脚本的第n个参数</span></span><br><span class="line"><span class="comment"># $@ 所有参数</span></span><br><span class="line"><span class="comment"># $# 参数个数</span></span><br><span class="line"><span class="comment">#更多特殊变量可到官方文档查看：https://www.tldp.org/LDP/abs/html/special-chars.html</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>返回码</p>
-<p>Bash指令通常使用stdout返回输入值，stderr返回错误和错误码，返回值为0表示正常运行，返回其他任何非零的值都表示发生错误，与C&#x2F;C++类似。</p>
-<p>退出码可以搭配&amp;&amp;和||使用，更好地实现运行结果的处理</p>
-<p>例如：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">false</span> || <span class="built_in">echo</span> <span class="string">&quot;Oops,fail&quot;</span></span><br><span class="line"><span class="comment">#将会输出Oops,fail</span></span><br><span class="line"><span class="literal">true</span> || <span class="built_in">echo</span> <span class="string">&quot;Will not printed&quot;</span></span><br><span class="line"><span class="comment">#将不会有输出</span></span><br><span class="line"><span class="literal">false</span> &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;will not printed&quot;</span></span><br><span class="line"><span class="comment">#将不会有输出</span></span><br><span class="line"><span class="literal">true</span> &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;Things went well&quot;</span></span><br><span class="line"><span class="comment">#将会输出Things went well</span></span><br><span class="line"><span class="comment">#因为||和&amp;&amp;都属于短路运算符</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#还可以用;分隔同一行的多个命令，例如</span></span><br><span class="line"><span class="built_in">mkdir</span> l ; <span class="built_in">cd</span> l</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>命令替换</p>
-<p>可以在命令中使用$(command)来执行所需的命令，命令中$(command)将会被command的输出所替换，例如：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Now time is <span class="subst">$(date)</span>&quot;</span></span><br><span class="line"><span class="comment">#$(date)将被替换为date的输出结果，即当前的日期和时间</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>通配</p>
-<p>通配符：可以分别使用 ? 和 * 来匹配一个或任意个字符。</p>
-<p>例如对于文件 foo,foo1,foo2,fool0和bar</p>
-<p>rm foo? 会删除 foo1 和 foo2</p>
-<p>rm foo* 会删除除bar以外的所有文件</p>
-<br>
-
-<p>花括号：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">convert &quot;img.&#123;png,jpg&#125;&quot;</span><br><span class="line">#等价于 convert &quot;img.png img.jpg&quot;</span><br><span class="line"></span><br><span class="line">mv *.&#123;py,sh&#125; folder</span><br><span class="line">#可以和通配符结合使用，将所有的.py .sh文件移动到folder文件夹中</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>补充</p>
-<p>编写Bash脚本有时候会非常别扭和反直觉，可以使用<a target="_blank" rel="noopener" href="https://github.com/koalaman/shellcheck">shellcheck</a>这种工具定位脚本中的错误</p>
-<p>脚本不一定只有用Bash写的才能在终端中调用，例如:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/local/bin/python</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">for</span> arg <span class="keyword">in</span> <span class="built_in">reversed</span>(sys.argv[<span class="number">1</span>:])</span><br><span class="line">	<span class="built_in">print</span>(arg)</span><br></pre></td></tr></table></figure>
-
-<p>内核知道使用python解释器来执行而不是shell，因为第一行的shebang</p>
-<p>还可以在shebang行中使用env命令，会利用环境变量中的程序来解析该脚本，可以提高脚本的可移植性，env会利用PATH环境变量来进行定位，例如：<code>#!/usr/bin/env python</code>。</p>
-</li>
-</ol>
-<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><ol>
-<li><p>查看命令如何使用</p>
-<p>课程中推荐使用man命令和<a target="_blank" rel="noopener" href="https://tldr.sh/">TLDR pages</a>，但我不习惯使用这些工具，我推荐善用搜索引擎<a target="_blank" rel="noopener" href="https://www.google.com/">Google</a> <a target="_blank" rel="noopener" href="https://www.bing.com/">Bing</a> <a target="_blank" rel="noopener" href="https://www.baidu.com/">Baidu</a></p>
-</li>
-<li><p>所有类UNIX系统都会包含一个名为<code>find</code>的工具，是在shell中查找文件最方便的工具，例如：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查找所有名称为src的文件夹</span></span><br><span class="line">find . -name src -<span class="built_in">type</span> d</span><br><span class="line"><span class="comment">#查找所有文件夹路径包含test的python文件</span></span><br><span class="line">find . -path <span class="string">&#x27;*/test/*.py&#x27;</span> -<span class="built_in">type</span> f</span><br><span class="line"><span class="comment">#查找所有前一天修改的文件</span></span><br><span class="line">find . -mtime -1</span><br><span class="line"><span class="comment">#查找所有大小在500K到1M的tar.gz文件</span></span><br><span class="line">find . -size +500k -size -1M -name <span class="string">&#x27;*.tar.gz&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除所有扩展名为.tmp的文件</span></span><br><span class="line">find . -name <span class="string">&#x27;*.tmg&#x27;</span> -<span class="built_in">exec</span> <span class="built_in">rm</span> &#123;&#125; \;</span><br><span class="line"><span class="comment">#查找所有png文件并转化为jpg</span></span><br><span class="line">find . -name <span class="string">&#x27;*.png&#x27;</span> -<span class="built_in">exec</span> convert &#123;&#125; &#123;&#125;.jpg \;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="课后练习"><a href="#课后练习" class="headerlink" title="课后练习"></a>课后练习</h1><ol>
-<li><p>使用<code>ls</code>进行以下操作</p>
-<ol>
-<li><p>打印所有文件（包括隐藏文件）</p>
-<p><code>ls -a</code></p>
-</li>
-<li><p>文件打印以人类可以理解的格式输出 (例如，使用454M 而不是454279954)</p>
-<p><code>ls -l -h</code></p>
-</li>
-<li><p>文件以最近访问顺序排序</p>
-<p><code>ls -t</code></p>
-</li>
-<li><p>以彩色文本显示输出结果</p>
-<p><code>ls --color=auto</code></p>
-</li>
-</ol>
-</li>
-<li><p>编写两个bash函数  marco 和 polo 执行下面的操作。 每当你执行 marco 时，当前的工作目录应当以某种形式保存，当执行  polo 时，无论现在处在什么目录下，都应当 cd 回到当时执行 marco 的目录。 为了方便debug，你可以把代码写在单独的文件  marco.sh 中，并通过 source marco.sh命令，（重新）加载函数。通过source 来加载函数，随后可以在 bash  中直接使用。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="function"><span class="title">marco</span></span>()&#123;</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">&quot;<span class="subst">$(pwd)</span>&quot;</span> &gt; /marco.log</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="title">polo</span></span>()&#123;</span><br><span class="line">	<span class="built_in">cd</span> <span class="string">&quot;<span class="subst">$(cat <span class="string">&quot;/marco.log&quot;</span>)</span>&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>假设您有一个命令，它很少出错。因此为了在出错时能够对其进行调试，需要花费大量的时间重现错误并捕获输出。 编写一段bash脚本，运行如下的脚本直到它出错，将它的标准输出和标准错误流记录到文件，并在最后输出所有内容。 加分项：报告脚本在失败前共运行了多少次。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">count=1</span><br><span class="line"><span class="built_in">echo</span> &gt; out.log</span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	./bugshell.sh &amp;&gt;&gt; out.log</span><br><span class="line">	<span class="keyword">if</span> [[$? -ne 0]] ; <span class="keyword">then</span></span><br><span class="line">		<span class="built_in">cat</span> out.log</span><br><span class="line">		<span class="built_in">echo</span> <span class="string">&quot;Failed after <span class="variable">$count</span> attempts&quot;</span></span><br><span class="line">		<span class="built_in">break</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line">	((count++))</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本节课我们讲解的 find 命令中的 -exec 参数非常强大，它可以对我们查找的文件进行操作。 如果我们要对所有文件进行操作呢？例如创建一个zip压缩文件？我们已经知道，命令行可以从参数或标准输入接受输入。在用管道连接命令时，我们将标准输出和标准输入连接起来，但是有些命令，例如tar 则需要从参数接受输入。这里我们可以使用<a target="_blank" rel="noopener" href="https://man7.org/linux/man-pages/man1/xargs.1.html">xargs</a> 命令，它可以使用标准输入中的内容作为参数。 例如 ls | xargs rm  会删除当前目录中的所有文件。您的任务是编写一个命令，它可以递归地查找文件夹中所有的HTML文件，并将它们压缩成zip文件。注意，即使文件名中包含空格，您的命令也应该能够正确执行（提示：查看 xargs的参数-d）</p>
-<p><code>find . -name &quot;*.html&quot; | xargs -d &#39;\n&#39; tar -czvf html.zip</code></p>
-</li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/05/16/Mit-the-missing-semester-Day2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
