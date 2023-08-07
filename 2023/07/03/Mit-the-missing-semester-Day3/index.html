@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.kesoft.top","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="课程目标">
+    <meta name="description" content="课程目标学习Vim的设计原理以及基础知识，了解Vim的一部分高级功能">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mit:the missing semester Day3">
 <meta property="og:url" content="http://www.kesoft.top/2023/07/03/Mit-the-missing-semester-Day3/index.html">
 <meta property="og:site_name" content="Kesoft">
-<meta property="og:description" content="课程目标">
+<meta property="og:description" content="课程目标学习Vim的设计原理以及基础知识，了解Vim的一部分高级功能">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-03T10:47:34.000Z">
-<meta property="article:modified_time" content="2023-07-03T10:51:07.416Z">
+<meta property="article:modified_time" content="2023-08-07T08:43:18.549Z">
 <meta property="article:author" content="Kesoft">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
@@ -140,7 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%BE%E7%A8%8B%E7%9B%AE%E6%A0%87"><span class="nav-number">1.</span> <span class="nav-text">课程目标</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%BE%E7%A8%8B%E7%9B%AE%E6%A0%87"><span class="nav-number">1.</span> <span class="nav-text">课程目标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vim%E7%BC%96%E8%BE%91%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">Vim编辑模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vim%E7%9A%84%E6%8E%A5%E5%8F%A3"><span class="nav-number">4.</span> <span class="nav-text">Vim的接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89Vim"><span class="nav-number">5.</span> <span class="nav-text">自定义Vim</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vim%E6%89%A9%E5%B1%95"><span class="nav-number">6.</span> <span class="nav-text">Vim扩展</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vim%E8%BF%9B%E9%98%B6"><span class="nav-number">7.</span> <span class="nav-text">Vim进阶</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -224,9 +224,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-07-03 18:47:34 / 修改时间：18:51:07" itemprop="dateCreated datePublished" datetime="2023-07-03T18:47:34+08:00">2023-07-03</time>
+      <time title="创建时间：2023-07-03 18:47:34" itemprop="dateCreated datePublished" datetime="2023-07-03T18:47:34+08:00">2023-07-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-08-07 16:43:18" itemprop="dateModified" datetime="2023-08-07T16:43:18+08:00">2023-08-07</time>
     </span>
 
   
@@ -253,7 +259,103 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="课程目标"><a href="#课程目标" class="headerlink" title="课程目标"></a>课程目标</h1><span id="more"></span>
+        <h1 id="课程目标"><a href="#课程目标" class="headerlink" title="课程目标"></a>课程目标</h1><p>学习Vim的设计原理以及基础知识，了解Vim的一部分高级功能</p>
+<span id="more"></span>
+
+<h1 id="Vim编辑模式"><a href="#Vim编辑模式" class="headerlink" title="Vim编辑模式"></a>Vim编辑模式</h1><p>Vim设计以大多数时间花在阅读、浏览和少量编辑为基础，因此具有多种操作模式：</p>
+<ol>
+<li>正常模式：在文件中四处移动光标进行修改 <kbd>Esc</kbd></li>
+<li>插入模式：插入文本 <kbd>I</kbd></li>
+<li>替换模式：替换文本 <kbd>R</kbd></li>
+<li>可视化模式：选中文本块 <kbd>V</kbd>行 <kbd>Ctrl-V</kbd>块</li>
+<li>命令模式：用于执行命令 <kbd>:</kbd></li>
+</ol>
+<p>不同模式下，键盘敲击的含义也不同，比如x在插入模式下会插入字母x，但在正常模式下会删除当前光标所在的字母，在可视化模式下会删除选中的块</p>
+<p>默认设置下，Vim会在左下角显示当前的模式，可以按下Esc键从任何其他模式返回正常模式</p>
+<h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><ul>
+<li><p>插入文本</p>
+<p>在正常模式按<kbd>i</kbd>进入插入模式，按下<kbd>Esc</kbd>返回正常模式</p>
+</li>
+<li><p>缓存、标签页、窗口</p>
+<p>Vim会维护打开的文件，称为“缓存”。一个Vim会话包含一系列标签页，每个标签页包含一系列窗口，每个窗口显示一个缓存，与网页浏览器不一样的是，缓存与窗口不是一一对应的，窗口只是视角，一个缓存可以在多个窗口打开，甚至在同一标签页的多个窗口打开。这个功能非常好用，比如在查看同一文件的不同部分的时候。</p>
+<p>Vim默认打开一个标签页，这个标签也包含一个窗口</p>
+</li>
+<li><p>命令行</p>
+<p>在正常模式键入 : 进入命令行模式，这个模式有很多功能，包括打开、保存、关闭文件以及退出Vim(新手噩梦)</p>
+<ul>
+<li><code>:q</code> 退出</li>
+<li><code>:w</code> 保存写</li>
+<li><code>:wq</code> 保存并退出</li>
+<li><code>:e &#123;文件名&#125;</code> 打开要编辑的文件</li>
+<li><code>:ls</code> 显示打开的缓存</li>
+<li><code>:help &#123;指令&#125;</code> 打开帮助文档</li>
+</ul>
+</li>
+</ul>
+<h1 id="Vim的接口"><a href="#Vim的接口" class="headerlink" title="Vim的接口"></a>Vim的接口</h1><p>Vim最重要的设计思想是Vim的界面本身是一个程序语言。</p>
+<ul>
+<li><p>移动</p>
+<p>多数情况会在正常模式下，使用移动命令在缓存中导航</p>
+<ul>
+<li>基本移动：<kbd>hjkl</kbd>（左，下，上，右）</li>
+<li>词： <kbd>w</kbd>（下一个词），<kbd>b</kbd>（词初），<kbd>e</kbd>（词尾）</li>
+<li>行： <kbd>0</kbd>（行初），<kbd>^</kbd>（第一个非空格字符），<kbd>$</kbd>（行尾）</li>
+<li>屏幕：<kbd>H</kbd>（屏幕首行），<kbd>M</kbd>（屏幕中间），<kbd>L</kbd>（屏幕底部）</li>
+<li>翻页：<kbd>Ctrl-u</kbd>（上翻），<kbd>Ctrl-d</kbd>（下翻）</li>
+<li>文件：<kbd>gg</kbd>（文件头部），<kbd>G</kbd>（文件尾部）</li>
+<li>行数：<code>:&#123;行数&#125;</code>   <code>&#123;行数&#125;G</code></li>
+<li>杂项：<kbd>%</kbd>（找到配对，比如括号或者&#x2F;**&#x2F;之类的注释对） </li>
+<li>查找： <code>f&#123;字符&#125;</code>，<code>t&#123;字符&#125;</code>，<code>F&#123;字符&#125;</code>，<code>T&#123;字符&#125;</code> 查找&#x2F;到 向前&#x2F;向后 在本行的字符。 <kbd>,</kbd>&#x2F;<kbd>;</kbd>用于导航匹配</li>
+<li>搜索：<code>/&#123;正则表达式&#125;</code>，<kbd>n</kbd>&#x2F;<kbd>N</kbd>用于导航匹配</li>
+</ul>
+</li>
+<li><p>编辑</p>
+<p>抛弃鼠标，所有需要用鼠标做的事，现在都可以用键盘，采用编辑命令和移动命令的组合来完成。</p>
+<ul>
+<li><p><kbd>i</kbd> 进入插入模式</p>
+</li>
+<li><p><kbd>O</kbd>&#x2F;<kbd>o</kbd> 在上方&#x2F;下方插入行</p>
+</li>
+<li><p><code>d&#123;移动命令&#125;</code> 删除{移动命令}</p>
+<p>例如<code>dw</code>删除词，<code>d$</code>删除到行尾，<code>d0</code>删除到行头</p>
+</li>
+<li><p><code>c&#123;移动命令&#125;</code> 改变{移动命令}</p>
+<p>例如，<code>cw</code>改变词</p>
+</li>
+<li><p><code>x</code> 删除字符（等同于<code>dl</code>）</p>
+</li>
+<li><p><code>s</code> 替换字符（等同于<code>xi</code>）</p>
+</li>
+<li><p>可视化模式+操作 选中文字，<code>d</code>删除，<code>c</code>改变</p>
+</li>
+<li><p><code>u</code> 撤销 <code>C-r</code>重做</p>
+</li>
+<li><p><code>y</code> 复制</p>
+</li>
+<li><p><code>p</code> 粘贴</p>
+</li>
+</ul>
+</li>
+<li><p>重复</p>
+<p>可以用一个技术结合指令，这会执行指定的指令若干次，例如：</p>
+<ul>
+<li><code>3w</code> 向前移动三个词</li>
+<li><code>5j</code> 向下移动5行</li>
+<li><code>7dw</code> 删除7个词</li>
+</ul>
+</li>
+</ul>
+<h1 id="自定义Vim"><a href="#自定义Vim" class="headerlink" title="自定义Vim"></a>自定义Vim</h1><p>Vim有一个位于<code>~/.vimrc</code>的文本配置文件。</p>
+<p>可以更换为课程推荐的设置，修复了一些Vim默认设置的奇怪行为，<a target="_blank" rel="noopener" href="https://missing-semester-cn.github.io/2020/files/vimrc">下载地址</a>，保存为<code>~/.vimrc</code></p>
+<h1 id="Vim扩展"><a href="#Vim扩展" class="headerlink" title="Vim扩展"></a>Vim扩展</h1><p>Vim有许多的扩展插件，从Vim8.0开始即内置了一个插件管理器，只需要创建一个<code>~/.vim/pack/vendor/start/</code>的文件夹，将插件放到此处即可使用。</p>
+<p>以下为课程推荐的几个插件：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ctrlpvim/ctrlp.vim">ctrlp.vim</a> 模糊文件查找</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mileszs/ack.vim">ack.vim</a> 代码搜索</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/preservim/nerdtree">nerdtree</a> 文件浏览器</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/easymotion/vim-easymotion">vim-easymotion</a> 魔术操作</li>
+</ul>
+<h1 id="Vim进阶"><a href="#Vim进阶" class="headerlink" title="Vim进阶"></a>Vim进阶</h1><p>不想学，略。</p>
 
     </div>
 
